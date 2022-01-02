@@ -1,0 +1,269 @@
+<html>
+  <head>
+    <title>Contact Us - GNine Belitung</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: #182549;
+      }
+
+      .header h1 {
+        font-size: 50px;
+        color: #FFFFFF;
+      }
+
+      .header p {
+        font-size: 20px;
+        color: #FFFFFF;
+      }
+
+      .row h2 {
+        font-size: 40px;
+      }
+
+      .row h5 {
+        font-size: 25px;
+      }
+
+      .row ul li {
+        font-weight: bold;
+        line-height:25pt;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #182549;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ffffff;
+        color: #182549;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 100%;
+        background-color: #ffffff;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 15px;
+        background: #182549;
+        margin-top: 20px;
+      }
+
+      .footer h6 {
+        font-size: 10px;
+        line-height: 0px;
+        color: #FFFFFF;
+      }
+
+      .mail {
+        width: 730px;
+        margin: 10px auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+      .mail div {
+        padding: 5px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      label {
+        width: 100px;
+        display: inline-block;
+      }
+      .bottom {
+        font-size: 12px;
+        text-align: right;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+
+    </style>
+ </head>
+
+ <body>
+   <div class="header">
+     <img src="group nine.png" width="200" height="90">
+   </div>
+   <div class="topnav">
+     <a href="index.html">HOME</a>
+     <a href="about us.html">ABOUT US</a>
+     <a href="gallery.html">GALLERY</a>
+     <a href="contact us.html" style="float:right">CONTACT US</a>
+   </div>
+
+    <div class="row">
+      <div class="card ">
+        <h2 style="text-align: center;">CONTACT US</h2>
+        <h5 style="text-align: center;">Jika Anda memiliki saran, komentar, ataupun keluhan terkait dengan pariwisata Belitung, jangan ragu untuk menghubungi kami melalui Contact Form di bawah: </h6>
+    <div class="row">
+        <div class="mail">
+          <form action="send_mail.php" method="post" name="form-kelompok9">
+            <div>
+              <label for="name">Nama</label>
+              <input type="text" name="name" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="text" name="email" />
+            </div>
+
+            <div>
+              <label for="subject">Subject</label>
+              <select name="subject">
+                <option value="destinasi">Destinasi Wisata</option>
+                <option value="kuliner">Kuliner</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="Jns_pesan :">Message</label>
+              <select name="jns_pesan">
+                <option value="komentar">Komentar</option>
+                <option value="pertanyaan">Pertanyaan</option>
+                <option value="keluhan">Keluhan</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+              <input type="submit" value="Kirim" />
+              <div class="submit btn-kirim">
+                <title>Font Awesome Icons</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <i class="fa fa-spinner fa-spin btn-loading d-none" style="font-size:24px"></i>
+
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://facebook.com/arief.dgangker">
+          <img src="fb.png" width="20" height="20">
+        </a>
+        <a href="https://instagram.com/Arief_setiawan_">
+          <img src="ig.png" width="20" height="20">
+        </a>
+        <a href="https://twitter.com">
+          <img src="twitter.png" width="20" height="20">
+        </a>
+        <h6>
+          Edited by: Arief Setiawan - 12180246
+        </h6>
+        <h6>
+          ©2022 - GNINE BELITUNG
+        </h6>
+      </div>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxFTW7unyjbtuPbBtwp12a5WVEKi2A8Z1Yj8Nrf30EmeN6N8lt2q8UEC-DZnS0fjumU/exec';
+      const form = document.forms['form-kelompok9'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        //ketika tombol submit di klik
+        //tampilkan tombol loading , hilangkan tombol kirim
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            //tampilkan tombol kirim , hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //tampilkan alert
+            myAlert.classList.toggle('d-none');
+            //reset formnya
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>

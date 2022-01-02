@@ -1,0 +1,319 @@
+<html>
+  <head>
+    <title>Gallery - GNine Belitung</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: #182549;
+      }
+
+      .header h1 {
+        font-size: 50px;
+        color: #FFFFFF;
+      }
+
+      .header p {
+        font-size: 20px;
+        color: #FFFFFF;
+      }
+
+      .row h2 {
+        font-size: 40px;
+      }
+
+      .row h5 {
+        font-size: 25px;
+      }
+
+      .row ul li {
+        font-weight: bold;
+        line-height:25pt;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #182549;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ffffff;
+        color: #182549;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 100%;
+        background-color: #ffffff;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 15px;
+        background: #182549;
+        margin-top: 20px;
+      }
+
+      .footer h6 {
+        font-size: 10px;
+        line-height: 0px;
+        color: #FFFFFF;
+      }
+
+      div.gallery {
+        border: 1px solid #fff;
+      }
+      
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="group nine.png" width="200" height="90">
+    </div>
+
+    <div class="topnav">
+      <a href="index.html">HOME</a>
+      <a href="about us.html">ABOUT US</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="contact us.html" style="float:right">CONTACT US</a>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h2 style="text-align: center;">Destinasi Wisata</h2>
+        <h4 style="text-align: center;">Belitung</h4>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.1lengkuas.jpg" alt="pulau lengkuas" width="600" height="400" />
+            <div class="desc">Pulau Lengkuas</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.danaukaulin.jpg" alt="danaukaulin" width="600" height="400" />
+            <div class="desc">Danau Kaulin</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.openpit.jpg" alt="openpit" width="600" height="400" />
+            <div class="desc">Openpit</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.tanjungkelayang.jpg" alt="tanjungkelayang" width="600" height="400" />
+            <div class="desc">Tanjung kelayang</div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.tanjungtinggi.jpg" alt="tanjungtinggi" width="600" height="400" />
+            <div class="desc">Tanjung Tinggi</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.pulau burung.jpg" alt="pulauburung" width="600" height="400" />
+            <div class="desc">Pulau Burung</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.batubaginde.jpg" alt="batubaginde" width="600" height="400" />
+            <div class="desc">Batu Baginde</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.1batusatam.jpg" alt="batusatam" width="600" height="400" />
+            <div class="desc">Batu Satam</div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+          <div class="card">
+            <h2 style="text-align: center;">Makanan Khas</h2>
+            <h4 style="text-align: center;">Belitung</h4>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.gangan.jpg" alt="gangan" width="600" height="400" />
+            <div class="desc">Gangan</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.berego.jpg" alt="berego" width="600" height="400" />
+            <div class="desc">Berego</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.miebelitung.jpg" alt="miebelitung" width="600" height="400" />
+            <div class="desc">Mie Belitung</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="img.lakse.jpg" alt="lakse" width="600" height="400" />
+            <div class="desc">Lakse</div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://facebook.com">
+          <img src="fb.png" width="20" height="20">
+        </a>
+        <a href="https://instagram.com">
+          <img src="ig.png" width="20" height="20">
+        </a>
+        <a href="https://twitter.com">
+          <img src="twitter.png" width="20" height="20">
+        </a>
+        <h6>
+          Edited by: Michael - 12180245
+        </h6>
+        <h6>
+          ©2022 - GNINE BELITUNG
+        </h6>
+      </div>
+
+  </body>
+</html>

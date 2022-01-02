@@ -1,0 +1,274 @@
+<html>
+  <head>
+    <title>About Us - GNine Belitung</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: #182549;
+      }
+
+      .header h1 {
+        font-size: 50px;
+        color: #FFFFFF;
+      }
+
+      .header p {
+        font-size: 20px;
+        color: #FFFFFF;
+      }
+
+      .row h2 {
+        font-size: 40px;
+      }
+
+      .row h5 {
+        font-size: 25px;
+      }
+
+      .row ul li {
+        font-weight: bold;
+        line-height:25pt;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #182549;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ffffff;
+        color: #182549;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 100%;
+        background-color: #ffffff;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card2 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 15px;
+        background: #182549;
+        margin-top: 20px;
+      }
+
+      .footer h6 {
+        font-size: 10px;
+        line-height: 0px;
+        color: #FFFFFF;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="group nine.png" width="200" height="90">
+    </div>
+
+    <div class="topnav">
+      <a href="index.html">HOME</a>
+      <a href="about us.html">ABOUT US</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="contact us.html" style="float:right">CONTACT US</a>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h2 style="text-align: center">About Us</h2>
+        <h5 style="text-align: center;">GNine adalah website yang bertujuan mengenalkan wisata Indonesia yang berfokus pada destinasi wisata maupun kuliner yang ada di Belitung. Tidak hanya itu, GNine pun kedepannya akan terus mengenalkan maupun mengembangkan website ini agar dapat bermanfaat untuk masyarakat yang tinggal di daerah tersebut dengan menambahkuatkan kebudayaanya agar memancing orang mancanegara maupun dalam negeri agar dapat datang dan menikmati itu semua. Adapun orang orang penting yang berperan dalam mengembangkan website ini adalah sebagai berikut:</h5>
+        <h2 style="text-align: center">GNine Team</h2>
+
+    <div class="row">
+      <div class="column">
+        <div class="card2">
+          <img src="img.kevin.jpeg" alt="Kevin" style="width: 100%" />
+          <div class="container">
+            <h2 style="text-align: center">Kevin Santoso</h2>
+            <h4 class="title" style="text-align: center">Home</h4>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>kevin.santoso2306@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card2">
+          <img src="img.gabriel.jpeg" alt="Gabriel" style="width: 100%" />
+          <div class="container">
+            <h2 style="text-align: center">Gabriel Servasius.B.R</h2>
+            <h4 class="title" style="text-align: center">About us</h4>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>Gabrielbill168@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card2">
+          <img src="img.michael.jpeg" alt="michael" style="width: 100%" />
+          <div class="container">
+            <h2 style="text-align: center">Michael</h2>
+            <h4 class="title" style="text-align: center">Gallery</h4>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>peyeksibu@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card2">
+          <img src="img.arief.jpeg" alt="ariefSetiawan" style="width: 100%" />
+          <div class="container">
+            <h2 style="text-align: center">Arief Setiawan</h2>
+            <h4 class="title" style="text-align: center">Contact Us</h4>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>dizi.coga@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://facebook.com/bill.gabrielklinton">
+          <img src="fb.png" width="20" height="20">
+        </a>
+        <a href="https://instagram.com/_gabrielrengga">
+          <img src="ig.png" width="20" height="20">
+        </a>
+        <a href="https://twitter.com">
+          <img src="twitter.png" width="20" height="20">
+        </a>
+        <h6>
+          Edited by: Gabriel Servasius.B.R - 12180182
+        </h6>
+        <h6>
+          ©2022 - GNINE BELITUNG
+        </h6>
+      </div>
+  </body>
+</html>
