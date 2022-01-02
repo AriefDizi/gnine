@@ -205,12 +205,8 @@
             </div>
 
             <div>
-              <input type="submit" value="Kirim" />
-              <div class="submit btn-kirim">
-                <title>Font Awesome Icons</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <i class="fa fa-spinner fa-spin btn-loading d-none" style="font-size:24px"></i>
+              <p id="submit"></p>
+              <button type="submit" value="kirim" class="submit" onclick="myFunction()">Kirim</button>
 
               </div>
 
@@ -264,6 +260,9 @@
           })
           .catch((error) => console.error('Error!', error.message));
       });
+      function myFunction() {
+  document.getElementById("submit").innerHTML = "Pesan Anda Berhasil Terkirim.";
+}
     </script>
   </body>
 </html>
